@@ -1,20 +1,48 @@
-def os (ist,l):
-    m={}
-    def sl(i,j):
-        if i>j or i>=l or j<0:
-            return 0 
-        k=(i,j)
-        if k in m:
-            return m[k]
-        o1 = lst[i]+min(sl(i+2,j),sl(i+1,j-1))
-        o2 = lst[j]+min(sl(i+1,j-1),sl(i,j-2))
-        m[k]- max(o1,o2)
-        return m[k]
-    return sl(0,1-1)
+# Input:
+# UDDLLRUUUDUURUDDUULLDRRRR
+# 5
+# 5
+# 2
+# 2 2
+# 3 3
 
-lst=list (map(int, input().split()))
-l=len(lst)
-sd=os(lst, 1)
-ts=sum(lst)
-sm=ts-sd
-print(f"Dheeraj wins with {sd-sm} cardI")
+
+s = input()
+row = int(input())
+col = int(input())
+
+o = int(input())
+
+ob1 = list(map(int, input().split()))
+ob2 = list(map(int, input().split()))
+
+ele = 0
+l=[]
+for _ in range(row):
+    
+    a = []
+    for _ in range(col):
+        ele += 1
+        a.append(ele)
+    l.append(a)
+    
+
+for i in l:
+    print(i)
+
+i = j = 0
+
+for mom in s:
+    if i!=ob1[0] or j!=ob1[1] and i!=ob2[0] or j!=ob2[1]:
+        if mom=="U":
+            i -= 1
+        elif mom=="D":
+            i += 1
+        elif mom=="L":
+            j -= 1
+        elif mom=="R":
+            j += 1
+    
+
+
+print("Final position of the robot: ({}, {})".format(abs(j),abs(i)))
