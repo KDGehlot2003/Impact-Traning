@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <style>
+        header {
+            background-color: #50AF85;
+            background-size: 300px 100px;
+            text-align: center;
+            height: 100px;
+        }
+        .navbar { 
+            overflow: hidden;
+            /* padding: 50px 70px; */
+        }
+        .navbar a {
+            float: left;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            padding: 50px 70px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 30px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 50px 70px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar a:hover .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        .dropdown-content {
+            display:none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+
+        }
+        .dropdown-content a:hover{
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        body {
+            /* background-image: 
+            url(https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630); */
+            background-repeat: no-repeat;
+        }
+        footer {
+            background-color: #50AF85;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header >
+        <div class="navbar">
+            <a href="dropdown"></a>
+            <a href="dropdown navbar.html">Home </a>
+            <a href="responsiveform.html" >Form </a>
+            <div class="dropdown" >
+                <button class="dropbtn" >Services</button>
+                <div class="dropdown-content" >
+                <a href="https://tihalt.com/ecommerce-website-development-company-bangalore/" target="blank" >WebDesign</a>
+            <a href="https://tihalt.com/logo-design-company-bangalore/" target="blank">Logo Design</a>
+            <a href="https://tihalt.com/seo-copywriting/" target="blank">SEO</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <img src="https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif" width="450" height="300"/>
+    <img src="https://www.collegebatch.com/static/clg-gallery/parul-university-vadodara-214643.jpg" width="450" height="300"/>
+    <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80" width="500" height="300"/>
+    <img src="https://www.wired.com/wp-content/uploads/2015/03/855.gif" width="450" height="300"/>
+    <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80" width="450" height="300"/>
+    <img src="https://www.collegebatch.com/static/clg-gallery/parul-university-vadodara-214643.jpg" width="450" height="300"/>
+    <footer>
+        Copyright™2024 <br>
+        <a href="/">Contact us</a>
+    </footer>
+
+</body>
+</html>
+
