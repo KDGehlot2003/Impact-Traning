@@ -18,3 +18,25 @@ function cal_sal(){
         form1.salary.value=sal
     }
 }
+
+
+
+function result() {
+    var q1 = document.getElementsByName('q1')
+    var q2 = document.getElementsByName('q2')
+    let marks = 0
+    if(document.querySelector('input[name="q1"]:checked').value=="true"){
+        marks+=1
+    } 
+    if(document.querySelector('input[name="q2"]:checked').value=="true"){
+        marks+=1
+    } 
+    alert("You got " + marks + " Marks 🥳")
+    console.log(marks)
+}
+
+
+function fun5() {
+
+    // window.open("window.html","","width:800 height=800")
+}
