@@ -13,3 +13,5 @@ for i in range(len(nums)):
     ans.append(s)
     nums.insert(0,nums.pop())
 print(max(ans))
+
+
