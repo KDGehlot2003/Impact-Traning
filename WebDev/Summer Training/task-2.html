@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+        }
+        .colorBox {
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <button id="previousButton">Previous</button>
+        <div class="colorBox"></div>
+        <button id="nextButton">Next</button>
+    </div>
+
+    <script>
+        const previousButton = document.getElementById("previousButton");
+        const nextButton = document.getElementById("nextButton");
+        const colorBox = document.querySelector(".colorBox");
+
+        const colors = [];
+
+        function getRandomColor() {
+            return `#${Math.floor(Math.random()*16777215).toString(16)}`;
+        }
+
+        nextButton.addEventListener("click", () => {
+            colors.push(getRandomColor());
+            colorBox.style.backgroundColor = colors[colors.length - 1];
+        })
+
+        previousButton.addEventListener("click", () => {
+            if (colors.length > 1) {
+                colors.pop();
+                colorBox.style.backgroundColor = colors[colors.length - 1];
+            }
+        })
+
+    </script>
+
+</body>
+</html>

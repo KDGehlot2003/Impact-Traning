@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Training Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .task-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="task-1">
+        <h1 id="heading">Summer Training Task</h1>
+        <button id="updateButton">Update</button>
+    </div>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const updateButton = document.getElementById("updateButton");
+
+        updateButton.addEventListener("click", () => {
+            if (heading.innerText === heading.innerText.toLowerCase()){
+                heading.innerText = heading.innerText.toUpperCase();
+            } else {
+                heading.innerText = heading.innerText.toLowerCase();
+            }
+        })
+
+    </script>
+</body>
+</html>
